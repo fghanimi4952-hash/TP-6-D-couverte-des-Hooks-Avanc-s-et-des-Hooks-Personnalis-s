@@ -1,0 +1,264 @@
+/* Styles généraux */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Titres de section */
+h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2:first-child {
+  margin-top: 20px;
+}
+
+/* Cartes pour chaque composant */
+.component-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.component-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles pour le Compteur */
+.compteur-container {
+  text-align: center;
+}
+
+.compteur-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #667eea;
+  margin: 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.compteur-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.compteur-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.compteur-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.compteur-button:active {
+  transform: scale(0.98);
+}
+
+/* Styles pour FocusInput */
+.focus-input-container {
+  text-align: center;
+}
+
+.focus-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.focus-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.focus-button {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(245, 87, 108, 0.4);
+}
+
+.focus-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.6);
+}
+
+/* Styles pour CompteurRendu */
+.compteur-rendu-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.compteur-rendu-text {
+  font-size: 1.1rem;
+  color: #555;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+/* Styles pour ListeArticles */
+.liste-articles-container {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.liste-articles-loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #667eea;
+  padding: 30px;
+}
+
+.liste-articles-error {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #f5576c;
+  padding: 20px;
+  background: #ffe5e5;
+  border-radius: 8px;
+  border-left: 4px solid #f5576c;
+}
+
+.liste-articles-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.liste-articles-item {
+  background: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.liste-articles-item:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.liste-articles-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Styles pour Timer */
+.timer-container {
+  text-align: center;
+}
+
+.timer-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #667eea;
+  margin: 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Scrollbar personnalisée */
+.liste-articles-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.liste-articles-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.liste-articles-container::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+.liste-articles-container::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .component-card {
+    padding: 20px;
+  }
+
+  .compteur-value {
+    font-size: 2rem;
+  }
+
+  .timer-text {
+    font-size: 2rem;
+  }
+
+  .compteur-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .compteur-button {
+    width: 100%;
+    max-width: 200px;
+  }
+}
