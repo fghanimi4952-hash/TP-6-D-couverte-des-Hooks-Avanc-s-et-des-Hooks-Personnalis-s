@@ -8,30 +8,13 @@ Ce TP permet de pratiquer les notions suivantes :
 - `useEffect` avec nettoyage
 - Création d'un Hook personnalisé
 
-## 🚀 Installation
 
-```bash
-cd tp-hooks-debutant
-npm install
-npm start
-```
 
-L'application s'ouvrira sur http://localhost:3000
+##  Structure du projet
 
-## 📁 Structure du projet
+<img width="483" height="484" alt="Capture d’écran 2025-11-18 à 09 28 05" src="https://github.com/user-attachments/assets/cbbed38b-9760-4ffe-9a65-83142a32d1b1" />
 
-```
-src/
-├── App.js              # Composant principal qui affiche tous les exemples
-├── Compteur.js         # Compteur avec useReducer
-├── FocusInput.js       # Focus sur input avec useRef
-├── CompteurRendu.js    # Compteur de rendus avec useRef
-├── useFetch.js         # Hook personnalisé pour récupérer des données
-├── ListeArticles.js    # Liste d'articles utilisant useFetch
-└── Timer.js            # Timer avec nettoyage useEffect
-```
-
-## ✅ Résultats attendus
+##  Résultats 
 
 ### 1. Compteur avec useReducer
 **Résultat attendu :**
